@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir/Vazir.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Vazir/Vazir.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/Vazir/Vazir.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/Vazir/Vazir.woff") format("woff"), /* Pretty Modern Browsers */ url("../fonts/Vazir/Vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "iran-sans";
+    src: url("../fonts/iran-sans/IranianSans.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/iran-sans/IranianSans.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/iran-sans/IranianSans.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/iran-sans/IranianSans.woff") format("woff"), /* Pretty Modern Browsers */ url("../fonts/iran-sans/IranianSans.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+$fa-font-family: "Vazir", "Yekan", tahoma, calibri;
+$en-font-family: "Yekan", tahoma, calibri;

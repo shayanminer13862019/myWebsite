@@ -1,0 +1,55 @@
+@import 'functions';
+@import 'Variables';
+@import 'fonts';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: right;
+    direction: rtl;
+}
+
+// Scroll reset setting
+html {
+    scroll-behavior: smooth;
+}
+
+// border style
+%border-primary {
+    border: 2px solid $primary-color;
+}
+
+%border-secondary {
+    border: 2px solid $secondary-color;
+}
+
+// buttons style
+.buttons {
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.25rem $secondary-color;
+    margin-top: 1rem;
+    @include transition(box-shadow, 0.5s);
+     
+    &:hover {
+        color: $light-color;
+        text-decoration: none;
+    }
+
+    &:focus {
+        color: $light-color;
+        outline: none;
+
+        box-shadow: 0 0 0.5rem $secondary-color;
+    }
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

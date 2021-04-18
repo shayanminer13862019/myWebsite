@@ -1,0 +1,251 @@
+@import "fonts";
+@import "Variables";
+@import "global-setting";
+@import "functions";
+@import "Media-querys";
+
+.nav {
+    background-color: rgba(20, 20, 20, 0.973);
+    border-bottom: 2px solid $dark-color;
+
+    &bar-toggler {
+        color: $light-color;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-item {
+        margin-left: 0.5rem;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+
+        &:first-child {
+            a {
+                border-bottom-color: $primary-color;
+            }
+        }
+    }
+
+    &-link {
+        color: $light-color;
+        border-bottom: 2px solid transparent;
+        @include transition(border-bottom-color, 0.5s);
+        padding-bottom: 0.75rem;
+
+        &:hover {
+            border-bottom-color: $primary-color;
+            color: $light-color;
+        }
+    }
+}
+
+.header {
+    background: linear-gradient(#000000c9, #000000c9), url(../img/development.jpg) center center / cover;
+    height: 100vh;
+    position: relative;
+
+    &-content {
+        line-height: 3rem;
+        padding: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0%;
+        transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        width: 80%;
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+        }
+
+        .arrow-down {
+            background-color: $primary-color;
+            display: inline-block;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            padding: 1.5rem;
+            margin: 0 auto;
+            position: relative;
+            top: 1em;
+            cursor: pointer;
+            @extend %border-secondary;
+
+            &:hover {
+                box-shadow: 0 0 0.25rem $secondary-color;
+            }
+        }
+    }
+
+    &-title {
+        font-weight: 400;
+        text-align: center;
+        font-size: 3em;
+    }
+}
+
+// main sections style
+main .section {
+    text-align: center;
+    border-top: 1px solid $primary-color;
+
+    .line-bottom {
+        background: $primary-color;
+        width: 4%;
+        height: 3px;
+        margin: 0 auto;
+    }
+
+    &:nth-child(odd) {
+        background: $light-color;
+    }
+
+    &:nth-child(even) {
+        background: $medium-color;
+    }
+}
+
+// section 1 style
+.section-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 4rem;
+
+    .card {
+        padding: 2rem 1rem;
+        margin: 2rem;
+        text-align: center;
+        // line-height: 4rem;
+
+        &:first-child {
+            background-color: $primary-color;
+            color: $light-color;
+        }
+
+        &:last-child {
+            background-color: $medium-color;
+            color: $dark-color;
+        }
+
+        &-icon {
+            font-size: 5em;
+        }
+
+        &-text {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+}
+
+// section 2 style
+.section-2 {
+    padding: 3rem 0rem;
+
+    .github-icon {
+        font-size: 12em;
+        color: #000000;
+        border-radius: 50%;
+        border: 2px solid #000000;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    background-color: $medium-color;
+
+    .text {
+        padding: 0 20vw;
+    }
+}
+
+// section 3 style
+.section-3 {
+    padding: 4rem 0;
+
+    .star-icon {
+        font-size: 10em;
+        color: #000000;
+    }
+
+    .text-title {
+        margin-bottom: 1rem;
+    }
+
+    .skill-list {
+        // padding: 0 30vw;
+        font-size: 1.5rem;
+        line-height: 3rem;
+
+        .skill-item {
+            display: block;
+            direction: ltr;
+        }
+    }
+}
+
+// section 4 style
+.section-4 {
+    padding: 4rem 0;
+
+    .invite-icon {
+        font-size: 7em;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+
+    .text-title {
+        margin-bottom: 1rem;
+    }
+
+    .buttons {
+        margin: 0 1rem;
+        margin-top: 1rem;
+    }
+}
+
+// Footer style
+footer {
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem 2rem 0.5rem 1rem;
+
+    .text-footer {
+        text-align: left;
+        direction: ltr;
+        text-shadow: 0.1em 0.1em 0.2em $medium-color;
+    }
+}
+
+.device {
+    .fa {
+        font-size: 1.5em;
+        margin: 0 0.1em;
+
+        &:nth-child(1) {
+            font-size: 1.5em;
+        }
+
+        &:nth-child(2) {
+            font-size: 1.5em;
+        }
+
+        &:nth-child(3) {
+            font-size: 1.8em;
+        }
+
+        &:nth-child(4) {
+            font-size: 1.8em;
+        }
+    }
+}
